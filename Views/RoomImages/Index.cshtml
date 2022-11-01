@@ -1,0 +1,12 @@
+﻿
+@model IEnumerable<HotelApp.ViewModel.RoomImagesModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center"> Room Images</h1>
+
+<div id="view-all">
+    @await Html.PartialAsync("_RoomImagesPartial", Model)
+</div>
